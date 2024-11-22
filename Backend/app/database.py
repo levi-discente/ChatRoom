@@ -11,7 +11,7 @@ def init_db():
     - Configura o keyspace
     - Cria tabelas somente se elas não existirem
     """
-    cluster = Cluster(["127.0.0.1"])
+    cluster = Cluster(["cassandra"])
     session = cluster.connect()
 
     # Define o keyspace (ajuste conforme necessário)
